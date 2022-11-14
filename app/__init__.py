@@ -9,5 +9,6 @@ def create_app():
     app = Flask(__name__)
     app.config.from_object(Config)
     bootstrap.init_app(app)
+    from .auth import auth
     return app
 
